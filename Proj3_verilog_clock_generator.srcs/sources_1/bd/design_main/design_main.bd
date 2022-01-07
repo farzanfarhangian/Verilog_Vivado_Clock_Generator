@@ -1,0 +1,66 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7vx485tffg1157-1",
+      "gen_directory": "../../../../Proj3_verilog_clock_generator.gen/sources_1/bd/design_main",
+      "name": "design_main",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "clock_gen_0": "",
+      "counter_reg_0": ""
+    },
+    "components": {
+      "clock_gen_0": {
+        "vlnv": "xilinx.com:module_ref:clock_gen:1.0",
+        "xci_name": "design_main_clock_gen_0_0",
+        "xci_path": "ip\\design_main_clock_gen_0_0\\design_main_clock_gen_0_0.xci",
+        "inst_hier_path": "clock_gen_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_gen",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "O"
+          }
+        }
+      },
+      "counter_reg_0": {
+        "vlnv": "xilinx.com:module_ref:counter_reg:1.0",
+        "xci_name": "design_main_counter_reg_0_0",
+        "xci_path": "ip\\design_main_counter_reg_0_0\\design_main_counter_reg_0_0.xci",
+        "inst_hier_path": "counter_reg_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter_reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "a": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clock_gen_0_clk": {
+        "ports": [
+          "clock_gen_0/clk",
+          "counter_reg_0/clk"
+        ]
+      }
+    }
+  }
+}
